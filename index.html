@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoIF2qP+6X7i9e6j+tQ8N7G5fQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body class="font-inter text-gray-800 bg-gray-50 antialiased">
@@ -29,41 +28,20 @@
     <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white shadow-lg sticky top-0 z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#home" class="text-3xl font-bold tracking-tight rounded-md p-2 transition-colors duration-300 hover:bg-blue-800">Rub4ik</a>
-            <ul class="hidden md:flex space-x-6">
+            <ul class="flex space-x-6">
                 <li><a href="#home" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Home</a></li>
                 <li><a href="#about" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">About</a></li>
                 <li><a href="#skills" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Skills</a></li>
                 <li><a href="#projects" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Projects</a></li>
                 <li><a href="#contact" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Contact</a></li>
             </ul>
-            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none p-2 rounded-md hover:bg-blue-800">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
         </nav>
     </header>
-
-    <div id="mobile-nav-drawer" class="fixed top-0 left-0 w-64 h-full bg-blue-900 text-white p-8 transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden shadow-lg">
-        <div class="flex justify-between items-center mb-8">
-            <span class="text-2xl font-bold">Menu</span>
-            <button id="close-mobile-menu" class="text-white focus:outline-none p-2 rounded-md hover:bg-blue-800">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-        </div>
-        <ul class="space-y-4">
-            <li><a href="#home" class="mobile-nav-link text-xl font-medium hover:text-blue-300 transition-colors duration-300 block py-2 rounded-md hover:bg-blue-800">Home</a></li>
-            <li><a href="#about" class="mobile-nav-link text-xl font-medium hover:text-blue-300 transition-colors duration-300 block py-2 rounded-md hover:bg-blue-800">About</a></li>
-            <li><a href="#skills" class="mobile-nav-link text-xl font-medium hover:text-blue-300 transition-colors duration-300 block py-2 rounded-md hover:bg-blue-800">Skills</a></li>
-            <li><a href="#projects" class="mobile-nav-link text-xl font-medium hover:text-blue-300 transition-colors duration-300 block py-2 rounded-md hover:bg-blue-800">Projects</a></li>
-            <li><a href="#contact" class="mobile-nav-link text-xl font-medium hover:text-blue-300 transition-colors duration-300 block py-2 rounded-md hover:bg-blue-800">Contact</a></li>
-        </ul>
-    </div>
-
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
 
     <section id="home" class="relative bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
         <div class="container mx-auto px-4 text-center">
             <div class="flex flex-col items-center justify-center">
-                <img src="images/profile.jpg" alt="Rub4ik's Profile Picture" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-xl mb-6 transform transition-transform duration-500 hover:scale-105" onerror="this.onerror=null;this.src='https://placehold.co/192x192/CCCCCC/333333?text=Profile';" loading="lazy" decoding="async"/>
+                <img src="images/profile.jpg" alt="Rub4ik's Profile Picture" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-xl mb-6 transform transition-transform duration-500 hover:scale-105" onerror="this.onerror=null;this.src='https://placehold.co/192x192/CCCCCC/333333?text=Profile';"/>
                 <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hello, I'm <span class="text-yellow-300">Rub4ik</span>!</h2>
                 <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl">A passionate <span class="font-semibold">Full Stack Developer</span> specializing in Python and JavaScript, crafting modern, responsive, and intelligent web experiences.</p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
@@ -74,7 +52,7 @@
         </div>
     </section>
 
-    <section id="about" class="py-16 md:py-24 bg-white" data-aos="fade-up">
+    <section id="about" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 text-center max-w-4xl">
             <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
                 About Me
@@ -89,7 +67,7 @@
         </div>
     </section>
 
-    <section id="skills" class="py-16 md:py-24 bg-gray-100" data-aos="fade-up">
+    <section id="skills" class="py-16 md:py-24 bg-gray-100">
         <div class="container mx-auto px-4 text-center max-w-5xl">
             <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
                 My Skills
@@ -126,7 +104,7 @@
         </div>
     </section>
 
-    <section id="projects" class="py-16 md:py-24 bg-white" data-aos="fade-up">
+    <section id="projects" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 text-center max-w-6xl">
             <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
                 My Projects
@@ -134,7 +112,7 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="images/discord-ai-bot-thumb.png" alt="Discord AI Bot Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=Discord+AI+Bot';" loading="lazy" decoding="async"/>
+                    <img src="images/discord-ai-bot-thumb.png" alt="Discord AI Bot Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=Discord+AI+Bot';"/>
                     <div class="p-6 text-left">
                         <h3 class="text-2xl font-semibold mb-2 text-blue-700">Discord AI Chatbot</h3>
                         <p class="text-gray-600 mb-4 text-sm">A sophisticated Discord bot leveraging the OpenAI API to generate dynamic and intelligent responses to user messages, enhancing server interaction.</p>
@@ -146,7 +124,7 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="images/telegram-ai-bot-thumb.png" alt="Telegram AI Bot Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=Telegram+AI+Bot';" loading="lazy" decoding="async"/>
+                    <img src="images/telegram-ai-bot-thumb.png" alt="Telegram AI Bot Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=Telegram+AI+Bot';"/>
                     <div class="p-6 text-left">
                         <h3 class="text-2xl font-semibold mb-2 text-blue-700">Telegram AI Chatbot</h3>
                         <p class="text-gray-600 mb-4 text-sm">A versatile Telegram bot integrated with the OpenAI API, designed to provide intelligent and context-aware responses, improving user engagement.</p>
@@ -158,7 +136,7 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="images/py-tg-bot-template-thumb.png" alt="Python Telegram Bot Template Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=TG+Bot+Template';" loading="lazy" decoding="async"/>
+                    <img src="images/py-tg-bot-template-thumb.png" alt="Python Telegram Bot Template Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=TG+Bot+Template';"/>
                     <div class="p-6 text-left">
                         <h3 class="text-2xl font-semibold mb-2 text-blue-700">Python Telegram Bot Template</h3>
                         <p class="text-gray-600 mb-4 text-sm">A robust and reusable template for quickly developing Telegram bots using Python and the `aiogram` library, streamlining the development process.</p>
@@ -173,7 +151,7 @@
         </div>
     </section>
 
-    <section id="contact" class="py-16 md:py-24 bg-gray-100" data-aos="fade-up">
+    <section id="contact" class="py-16 md:py-24 bg-gray-100">
         <div class="container mx-auto px-4 text-center max-w-3xl">
             <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
                 Get in Touch
@@ -183,21 +161,9 @@
                 I'm always open to new opportunities, collaborations, and interesting discussions. Feel free to reach out!
             </p>
             <div class="space-y-4 mb-8">
-                <p class="text-xl font-semibold text-blue-700">
-                    <a href="mailto:your.email@example.com" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
-                        <i class="fas fa-envelope mr-3 text-2xl"></i> your.email@example.com
-                    </a>
-                </p>
-                <p class="text-xl font-semibold text-blue-700">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
-                        <i class="fab fa-linkedin mr-3 text-2xl"></i> linkedin.com/in/yourprofile
-                    </a>
-                </p>
-                <p class="text-xl font-semibold text-blue-700">
-                    <a href="https://github.com/Rub4ik" target="_blank" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
-                        <i class="fab fa-github mr-3 text-2xl"></i> github.com/Rub4ik
-                    </a>
-                </p>
+                <p class="text-xl font-semibold text-blue-700">Email: <a href="mailto:your.email@example.com" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">your.email@example.com</a></p>
+                <p class="text-xl font-semibold text-blue-700">LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">linkedin.com/in/yourprofile</a></p>
+                <p class="text-xl font-semibold text-blue-700">GitHub: <a href="https://github.com/Rub4ik" target="_blank" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">github.com/Rub4ik</a></p>
             </div>
             <p class="text-gray-600 text-sm">
                 (Remember to replace placeholder email and LinkedIn links with your actual information)
@@ -219,6 +185,5 @@
     </button>
 
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
