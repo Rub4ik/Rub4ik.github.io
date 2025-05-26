@@ -1,0 +1,30 @@
+/* Custom Styles for Portfolio */
+
+/* Import Google Fonts (if not already handled by CDN link in HTML) */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
+
+/* Ensure smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global body styles (ensure Inter font is applied if using @import) */
+body {
+    font-family: 'Inter', sans-serif;
+    /* This class is added by JavaScript to prevent body scrolling when mobile menu is open */
+}
+
+/* Class to disable body scrolling when mobile menu is active */
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+/* You can add more custom styles here if needed */
+/* For example, for specific components or overrides not covered by Tailwind */
+
+/* Example: Styling for the scroll-to-top button if default Tailwind isn't enough */
+/* #scrollToTopBtn {
+    border: none;
+    cursor: pointer;
+    // Add other custom styles if necessary
+} */
