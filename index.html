@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrohim portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ibrohim's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Hello, I'm Ibrohim!</h2>
+            <p>A passionate Web Developer, UI/UX Designer, Data Scientist ready to build amazing things.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Share your story, skills, and aspirations here.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Thatweix@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ibrohim. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
