@@ -3,187 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rub4ik's Professional Portfolio - Full Stack Developer | Python | JavaScript</title>
+    <title>Ssilver - Exquisite Jewelry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the background image and overlay */
+        .hero-background {
+            /* Placeholder background image - REPLACE THIS URL with your high-detailed jewelry photo */
+            /* Example: url('path/to/your/high-res-jewelry-photo.jpg') */
+            background-image: url('https://www.freepik.com/free-photo/woman-s-arms-wearing-jewelry_31124336.htm#fromView=keyword&page=1&position=49&uuid=e2d21729-faba-43e4-8ba4-20f68425fe8d&query=Jewelry+Photography');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh; /* Ensures it covers the full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
 
-    <meta name="description" content="Rub4ik's professional web portfolio. A Full Stack Developer specializing in Python and JavaScript, building intelligent web applications and AI-powered bots.">
-    <meta name="keywords" content="Rub4ik, Full Stack Developer, Python, JavaScript, Web Development, AI, Discord Bot, Telegram Bot, Portfolio, Programmer, Software Engineer">
-    <meta name="author" content="Rub4ik">
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem;
+        }
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://Rub4ik.github.io/">
-    <meta property="og:title" content="Rub4ik's Professional Portfolio - Full Stack Developer">
-    <meta property="og:description" content="Rub4ik's professional web portfolio. A Full Stack Developer specializing in Python and JavaScript, building intelligent web applications and AI-powered bots.">
-    <meta property="og:image" content="https://Rub4ik.github.io/images/social-share-image.jpg"> <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://Rub4ik.github.io/">
-    <meta property="twitter:title" content="Rub4ik's Professional Portfolio - Full Stack Developer">
-    <meta property="twitter:description" content="Rub4ik's professional web portfolio. A Full Stack Developer specializing in Python and JavaScript, building intelligent web applications and AI-powered bots.">
-    <meta property="twitter:image" content="https://Rub4ik.github.io/images/social-share-image.jpg"> <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoIF2qP+6X7i9e6j+tQ8N7G5fQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        /* Ensure Inter font is used if not default by Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="font-inter text-gray-800 bg-gray-50 antialiased">
+<body class="bg-gray-100 text-gray-800">
 
-    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white shadow-lg sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#home" class="text-3xl font-bold tracking-tight rounded-md p-2 transition-colors duration-300 hover:bg-blue-800">Rub4ik</a>
-            <ul class="flex space-x-6">
-                <li><a href="#home" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Home</a></li>
-                <li><a href="#about" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">About</a></li>
-                <li><a href="#skills" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Skills</a></li>
-                <li><a href="#projects" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Projects</a></li>
-                <li><a href="#contact" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 rounded-md p-2 hover:bg-blue-800">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="relative bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
-        <div class="container mx-auto px-4 text-center">
-            <div class="flex flex-col items-center justify-center">
-                <img src="images/profile.jpg" alt="Rub4ik's Profile Picture" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-xl mb-6 transform transition-transform duration-500 hover:scale-105" onerror="this.onerror=null;this.src='https://placehold.co/192x192/CCCCCC/333333?text=Profile';"/>
-                <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hello, I'm <span class="text-yellow-300">Rub4ik</span>!</h2>
-                <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl">A passionate <span class="font-semibold">Full Stack Developer</span> specializing in Python and JavaScript, crafting modern, responsive, and intelligent web experiences.</p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="#projects" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">View My Work</a>
-                    <a href="resume/rub4ik-resume.pdf" download class="bg-white hover:bg-gray-200 text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">Download CV</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4 text-center max-w-4xl">
-            <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
-                About Me
-                <span class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-yellow-500 rounded-full"></span>
-            </h2>
-            <p class="text-lg leading-relaxed mb-6 text-gray-700">
-                I'm Rub4ik, a dedicated Full Stack Developer with a strong focus on Python and JavaScript technologies. My expertise lies in building robust backend systems and intuitive frontend interfaces, bringing comprehensive web solutions to life.
+    <div class="hero-background">
+        <div class="hero-overlay">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 rounded-lg p-2">
+                Ssilver
+            </h1>
+            <p class="text-xl md:text-2xl text-white max-w-2xl mx-auto mb-8 leading-relaxed rounded-lg p-2">
+                Discover timeless elegance and exquisite craftsmanship. Each piece is designed to tell a unique story.
             </p>
-            <p class="text-lg leading-relaxed text-gray-700">
-                I am particularly passionate about leveraging AI to create intelligent and interactive applications, as demonstrated by my work on Discord and Telegram bots. With a commitment to clean code and continuous learning, I thrive on tackling complex challenges and delivering high-quality, impactful projects.
+            <p class="text-lg md:text-xl text-white max-w-xl mx-auto mb-8 leading-relaxed rounded-lg p-2">
+                For inquiries, custom orders, or to make a purchase, please contact us directly on Telegram:
+            </p>
+            <a href="https://t.me/Sarvinozxon19" target="_blank" rel="noopener noreferrer"
+               class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Contact via Telegram
+            </a>
+            <p class="text-sm text-gray-300 mt-12 rounded-lg p-2">
+                Connect with us on Telegram for a personalized shopping experience.
             </p>
         </div>
-    </section>
+    </div>
 
-    <section id="skills" class="py-16 md:py-24 bg-gray-100">
-        <div class="container mx-auto px-4 text-center max-w-5xl">
-            <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
-                My Skills
-                <span class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-yellow-500 rounded-full"></span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-700"><i class="fas fa-code text-yellow-500 mr-3"></i>Frontend</h3>
-                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
-                        <li>HTML5, CSS3 (Tailwind CSS)</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Responsive Design, UI/UX Principles</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-700"><i class="fas fa-server text-yellow-500 mr-3"></i>Backend</h3>
-                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
-                        <li>Python (Django, Flask, FastAPI)</li>
-                        <li>Node.js (Express.js)</li>
-                        <li>RESTful APIs</li>
-                        <li>Database Management (MongoDB, PostgreSQL, MySQL)</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-700"><i class="fas fa-tools text-yellow-500 mr-3"></i>Tools & Other</h3>
-                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
-                        <li>Git, GitHub, GitLab</li>
-                        <li>Docker, API Integration (OpenAI)</li>
-                        <li>Bot Development (Discord.py, Aiogram)</li>
-                        <li>Problem Solving, Clean Code</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4 text-center max-w-6xl">
-            <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
-                My Projects
-                <span class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-yellow-500 rounded-full"></span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="images/discord-ai-bot-thumb.png" alt="Discord AI Bot Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=Discord+AI+Bot';"/>
-                    <div class="p-6 text-left">
-                        <h3 class="text-2xl font-semibold mb-2 text-blue-700">Discord AI Chatbot</h3>
-                        <p class="text-gray-600 mb-4 text-sm">A sophisticated Discord bot leveraging the OpenAI API to generate dynamic and intelligent responses to user messages, enhancing server interaction.</p>
-                        <p class="text-gray-500 text-xs font-medium mb-4">Technologies: Python, OpenAI API, Discord.py</p>
-                        <div class="flex flex-wrap gap-3">
-                            <a href="https://github.com/Rub4ik/discord-ai-bot" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-full transition-colors duration-300">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="images/telegram-ai-bot-thumb.png" alt="Telegram AI Bot Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=Telegram+AI+Bot';"/>
-                    <div class="p-6 text-left">
-                        <h3 class="text-2xl font-semibold mb-2 text-blue-700">Telegram AI Chatbot</h3>
-                        <p class="text-gray-600 mb-4 text-sm">A versatile Telegram bot integrated with the OpenAI API, designed to provide intelligent and context-aware responses, improving user engagement.</p>
-                        <p class="text-gray-500 text-xs font-medium mb-4">Technologies: Python, OpenAI API, Aiogram</p>
-                        <div class="flex flex-wrap gap-3">
-                            <a href="https://github.com/Rub4ik/telegram-bot" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-full transition-colors duration-300">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="images/py-tg-bot-template-thumb.png" alt="Python Telegram Bot Template Thumbnail" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x338/E0E0E0/333333?text=TG+Bot+Template';"/>
-                    <div class="p-6 text-left">
-                        <h3 class="text-2xl font-semibold mb-2 text-blue-700">Python Telegram Bot Template</h3>
-                        <p class="text-gray-600 mb-4 text-sm">A robust and reusable template for quickly developing Telegram bots using Python and the `aiogram` library, streamlining the development process.</p>
-                        <p class="text-gray-500 text-xs font-medium mb-4">Technologies: Python, Aiogram</p>
-                        <div class="flex flex-wrap gap-3">
-                            <a href="https://github.com/Rub4ik/py-tg-bot-template" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-full transition-colors duration-300">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-
-                </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-16 md:py-24 bg-gray-100">
-        <div class="container mx-auto px-4 text-center max-w-3xl">
-            <h2 class="text-4xl font-bold mb-12 text-blue-800 relative inline-block">
-                Get in Touch
-                <span class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-yellow-500 rounded-full"></span>
-            </h2>
-            <p class="text-lg leading-relaxed mb-8 text-gray-700">
-                I'm always open to new opportunities, collaborations, and interesting discussions. Feel free to reach out!
-            </p>
-            <div class="space-y-4 mb-8">
-                <p class="text-xl font-semibold text-blue-700">Email: <a href="mailto:your.email@example.com" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">your.email@example.com</a></p>
-                <p class="text-xl font-semibold text-blue-700">LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">linkedin.com/in/yourprofile</a></p>
-                <p class="text-xl font-semibold text-blue-700">GitHub: <a href="https://github.com/Rub4ik" target="_blank" class="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">github.com/Rub4ik</a></p>
-            </div>
-            <p class="text-gray-600 text-sm">
-                (Remember to replace placeholder email and LinkedIn links with your actual information)
-            </p>
-        </div>
-    </section>
-
-    <footer class="bg-blue-900 text-white py-8 text-center shadow-inner">
+    <footer class="bg-gray-900 text-white py-6 text-center">
         <div class="container mx-auto px-4">
-            <p>&copy; <span id="current-year"></span> Rub4ik. All rights reserved.</p>
-            <p class="text-sm mt-2">Built with ❤️ and Tailwind CSS</p>
+            <p class="text-sm mb-2">
+                &copy; 2025 Ssilver. All rights reserved.
+            </p>
+            <p class="text-xs">
+                Hosted on <a href="https://www.awardspace.com/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:underline">awardspace.com</a> | Domain: <span class="font-semibold">ssilver.onlinewebshop.net</span>
+            </p>
         </div>
     </footer>
 
-    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 z-40 hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
-    </button>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
